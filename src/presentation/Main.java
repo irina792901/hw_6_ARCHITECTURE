@@ -17,8 +17,11 @@ public class Main {
         bookRepository.addBook(book2);
         // Получаем список всех книг в магазине
         List<Book> allBooks = bookRepository.getAllBooks();
+
         bookRepository.printBooks(allBooks);
+
         bookRepository.removeBook(book2);
+
         bookRepository.printBooks(bookRepository.getAllBooks());
     }
 }
